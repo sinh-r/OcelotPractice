@@ -1,0 +1,119 @@
+{
+	"info": {
+		"_postman_id": "64176c64-ebf0-4c7d-9a94-dbaa402b9f2f",
+		"name": "OcelotPractice",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "16058152"
+	},
+	"item": [
+		{
+			"name": "RegisterUser",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"userName\": \"string\",\r\n  \"password\": \"string\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:7269/RegisterUser",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7269",
+					"path": [
+						"RegisterUser"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "LoginUser",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"userName\": \"string\",\r\n  \"password\": \"string\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:7269/LoginUser",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7269",
+					"path": [
+						"LoginUser"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "RefreshToken",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"token\": \"eyJhbGciOiJIUzUxMiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1lIjoic3RyaW5nIiwiZXhwIjoxNjgzMjkyNTMzfQ.dKPbKlhsdXzAz4fr1LYKHv26k3uun13DZMbsY6t-Wy371gkvc5O8m0FncllBTojupWB2bsPJ_dVd14BqS7OV7Q\",\r\n    \"tokenExpiryDate\": \"0001-01-01T00:00:00\",\r\n    \"refreshToken\": \"bGApa+cd7oOzdRuIROORDCotnwrFqq0rKZ897FOTfWGS5HQg8v4Y/CUSRtO2WIGgWtQSn176Qm/6Ep849MPTaA==\",\r\n    \"refreshTokenExpiry\": \"2023-05-07T18:43:34.1018209+05:30\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:7269/RefreshToken",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7269",
+					"path": [
+						"RefreshToken"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetWeatherForecast",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzUxMiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1lIjoic3RyaW5nIiwiZXhwIjoxNjgzMjkyNjAwfQ.CnYBtNXzPnGwR4gFoWevH3XV55-YvFg8AimkMDdMk8u4u0pSwNqmPrkpNbwX5gzaowcNn0fYE4YEyEzyC5BfGg",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "https://localhost:7269/GetWeatherForecastt",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7269",
+					"path": [
+						"GetWeatherForecastt"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
